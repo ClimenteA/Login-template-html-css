@@ -1,2 +1,2 @@
 # Login-template-html-css
-Simple flat login html template
+Simple flat login html template with a cool shake
