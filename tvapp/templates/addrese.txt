@@ -1,0 +1,11 @@
+ProTV 
+<a href="sop://51.15.195.206:3912/151380" target="_blank">Deschide în SopCast</a>
+
+Antena1
+<a href="sop://51.15.195.206:3912/149257" target="_blank">Deschide în SopCast</a>
+
+kanalD
+<a href="sop://51.15.195.206:3912/256720" target="_blank">Deschide în SopCast</a>
+
+primaTV
+<a href="sop://51.15.195.206:3912/263132" target="_blank">Deschide în SopCast</a>

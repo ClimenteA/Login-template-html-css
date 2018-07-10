@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+
+{% block content%}
+
+</br></br></br>
+
+
+<div class="row">
+
+<div class="col s3">
+    <!-- Grey navigation panel -->
+    <div class="left-align channellist">
+      <ul class="collection">
+        {% for channel, sopurl in context.items() %}
+          {% if "channelurl" == channel or "channelName" == channel %}
+          <!-- skip -->
+          {% else %}
+              <a href="/change-station/{{ channel }}" class="collection-item">{{ channel }}</a>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+  <div class="col s9">
+    <p>{{ context.channelName }}</p>
+    <object id="SopPlayer" name = "SopPlayer" classid="clsid:8FEFF364-6A5F-4966-A917-A3AC28411659" height="350" width="450">
+    	<param name="AutoStart" value="1" />
+    	<param name="SopAddress" value="{{ context.channelurl }}" />
+    	<param name="ChannelName" value="{{ context.channelName }}" />
+    </object>
+  </div>
+
+</div>
+
+
+
+
+{% endblock %}
